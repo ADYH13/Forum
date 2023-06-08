@@ -29,12 +29,12 @@ if (isset($_POST['validate']) ) {
                 
 
                 //Initialiser la session
-                $_SESSION['auth'] = true;
-                $_SESSION['id'] = $UserInfos['id'];
-                $_SESSION['name'] = $UserInfos['nom'];
-                $_SESSION['surname'] = $UserInfos['prenom'];
-                $_SESSION['pseudo'] = $UserInfos['pseudo'];
-                $_SESSION['mail'] = $UserInfos['mail'];
+                $_SESSION['auth']       = true;
+                $_SESSION['pseudo']     = $UserInfos['pseudo'];
+                $_SESSION['id']         = $UserInfos['id'];
+                $_SESSION['name']       = $UserInfos['nom'];
+                $_SESSION['surname']    = $UserInfos['prenom'];
+                $_SESSION['mail']       = $UserInfos['mail'];
 
                 header('Location: index.php');
             }

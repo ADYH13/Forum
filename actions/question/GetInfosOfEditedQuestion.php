@@ -15,7 +15,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) ) {
         if ($QuestionInfos['id_auteur'] == $_SESSION['id']) {
             $QuestionTitle = $QuestionInfos['titre'];
             $QuestionDescription = str_replace('<br />','', $QuestionInfos['description']);
-            $QuestionContent = str_replace('<br />','',$QuestionInfos['contenu']) ;
+            
             $QuestionDate = $QuestionInfos['date_publication']; 
         } else {
             $ErrorMessage = "Vous n'êtes pas autorisé à y acceder ...";

@@ -33,10 +33,7 @@
                             <textarea class="form-control" id="InputDescrip" name = "InputDescrip" ><?= $QuestionDescription ?></textarea> 
                         </div>
 
-                        <div class="mb-3">
-                            <label for="InputContenu" class="form-label">Contenu de la question</label>
-                            <textarea type="text" class="form-control" id="InputContenu" name="InputContenu" ><?= $QuestionContent ?></textarea> 
-                        </div>
+                        
 
 
                         
@@ -55,6 +52,6 @@
 
 
 
-    <?php include 'includes/bootstrap.php' ?>
+    <?php include 'includes/footer.php' ?>
     </body>
     </html>

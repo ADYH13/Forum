@@ -2,36 +2,33 @@
     require('actions/question/ShowAllQuestionsAction.php');
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+
 <?php include('includes/head.php') ?>
+
 <body>
+
 <?php include('includes/navbar.php') ?>
 
+
+
+
+
+
+
+    <?php include 'includes/search.php' ?>
+    
+
 <br>
-<br>
- 
 
-    <div class="container">
-        <form method="get">
-            <div class="form-group row">
-                <div class="col-8">
-                    <input type="search" name="search" id="search"  class="form-control" ></input>
-                </div>
-                <div class="col-4">
-                    <button  class="btn btn-success">Rechercher</button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-<br><br>
-
-
+<div class="content">
     <?php 
 
         if ($getAllQuestions->rowCount() > 0) {
             while ($question = $getAllQuestions->fetch()) {
                 ?> 
+
+                
+
                 <div class="container card">
                     <div class="card-header">
                         <a href = "Question.php?id=<?= $question['id'] ?>">
@@ -62,7 +59,9 @@
         
     
     ?>
+</div>
 
-<?php include('includes/bootstrap.php') ?>
+<?php include 'includes/footer.php' ?>
+
 </body>
 </html>

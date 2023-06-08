@@ -4,6 +4,7 @@
 <html lang="fr">
 <?php include "includes/head.php" ?>
 <body>
+
 <?php include "includes/navbar.php" ?>
 
 
@@ -16,17 +17,29 @@
         ?>
 
         
-            <div class="card">
-            <h5 class="card-header" > 
-                <a href = "Question.php?id=<?= $question['id'] ?>">
-                    <?= $question['titre'] ?>
-                </a>
-            </h5>
+            <div class="card container">
+            <h2 class="" style="border-bottom: 1px solid black ;"> 
+                    <?= $question['titre'] ?>  
+            </h2>
                 <div class="card-body">
-                    <p class="card-text"> <?= $question['description']; ?> </p>
-                    <a href="Question.php?id=<?= $question['id'] ?>" class="btn btn-primary">Acceder à la question</a>
-                    <a href="EditQuestions.php?id=<?= $question['id']; ?>" class="btn btn-warning">Modifier à la question</a>
-                    <a href="actions/question/DeleteQuestionAction.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer à la question</a>
+                    <table>
+                        <tbody >
+                            <tr >
+                                <thead ><p class="card-text" style="padding: 50px;"> <?= $question['description']; ?> </p></thead>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;" colspan="2"> <a  href="Question.php?id=<?= $question['id'] ?>">Acceder à la question</a></td>
+                            </tr>
+                            <tr >
+                                <td style="padding: 10px;"><a href="EditQuestions.php?id=<?= $question['id']; ?>" class="">Modifier la question</a></td>
+                                <td style="padding: 10px;"><a href="actions/question/DeleteQuestionAction.php?id=<?= $question['id']; ?>" class="">Supprimer la question</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                   
+                    
+                    
                 </div>
             </div>
             <br><br>
@@ -43,6 +56,6 @@
 
 </div>
 
-<?php include "includes/bootstrap.php" ?>
+<?php include "includes/footer.php" ?>
 </body>
 </html>

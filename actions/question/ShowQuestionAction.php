@@ -15,7 +15,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) ) {
             //Stocker ces données dans des variables 
             $QuestionTitle = $QuestionInfos['titre'];
             $QuestionDescription = str_replace('<br />','', $QuestionInfos['description']);
-            $QuestionContent = str_replace('<br />','',$QuestionInfos['contenu']) ;
+            
              
             $QuestionIdAuthor = $QuestionInfos['id_auteur'];
             $QuestionPseudoAuthor = $QuestionInfos['pseudo_auteur'];
