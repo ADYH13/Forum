@@ -1,4 +1,5 @@
-<?php session_start();
+<?php 
+    require ('actions/user/VerifiAuth.php');
     require ('actions/question/ShowQuestionAction.php');
     require ('actions/question/PostAnswerAction.php');
     require ('actions/question/ShowAllAnswerOfQuestionAction.php');

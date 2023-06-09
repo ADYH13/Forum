@@ -120,7 +120,7 @@
 
 <nav>
   <div class="navbar" id="myNavbar">
-    <a href="index.php">Forum</a>
+    <a href="index.php">Le Forum de la cité</a>
     <a href="index.php">Questions</a>
     <?php 
           if (isset($_SESSION['auth'])) {
