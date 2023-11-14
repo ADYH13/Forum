@@ -1,2 +1,2 @@
-# Forum de la cité
+# Forum
 Plateforme d'échange
